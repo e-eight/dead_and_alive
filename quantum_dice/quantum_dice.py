@@ -25,15 +25,15 @@ class QuantumDice:
         bit = [int(c) for c in self._measure()]
         dec = 0
         for i in range(self.qubits):
-            dec = dec + bit[i] * 2**(self.qubits - i - 1)
-        rolled = (dec + 1)
+            dec = dec + bit[i] * 2 ** (self.qubits - i - 1)
+        rolled = dec + 1
 
         if modular:
             rolled = rolled % self.base
             if rolled == 0:
                 rolled = self.base
         else:
-            max_roll = 2**self.qubits
+            max_roll = 2 ** self.qubits
             rolled = np.ceil(rolled * self.base / max_roll)
             rolled = int(rolled)
         return rolled
