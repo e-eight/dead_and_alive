@@ -3,4 +3,5 @@ computing with Qiskit. Inspired by the Qiskit Global Summer School.
 
 Demonstrations:
 
+[[file:gates/BasicGates.ipynb][Basic Quantum Gates]]: Single and multi-qubit gates.
 [[file:quantum_dice/dice_roller.ipynb][Quantum Dice Roller]]: Quantum mechanics to help you play Dungeons and Dragons.
